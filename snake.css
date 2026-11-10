@@ -1,0 +1,28 @@
+/* Center the snake game container */
+#snake-game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* Canvas styling */
+#snake-game canvas {
+  border: 2px solid #333;
+  background-color: #fafafa;
+  max-width: 100%;
+  height: auto;
+  outline: none; /* remove default outline */
+  box-sizing: border-box;
+}
+
+/* Focus outline for accessibility */
+#snake-game canvas:focus {
+  outline: 2px solid #0066ff;
+}
+/* Ensure the canvas scales nicely on high‑DPI displays */
+@media (min-resolution: 2dppx) {
+  #snake-game canvas {
+    image-rendering: pixelated;
+  }
+}
