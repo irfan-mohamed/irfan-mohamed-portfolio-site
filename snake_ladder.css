@@ -1,0 +1,85 @@
+/* snake_ladder.css - Styles for the Snake and Ladder game page */
+
+/* Center the main game container */
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Board image */
+.game-board {
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Dice container */
+.dice-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Dice image */
+.dice-image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+/* Roll Dice button */
+.roll-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.roll-btn:hover {
+    background-color: #45a049;
+}
+
+/* Status panel */
+.status-panel {
+    width: 600px;
+    max-width: 100%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    text-align: left;
+    line-height: 1.5;
+    color: #333;
+}
+
+.status-panel h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #222;
+}
+
+.status-panel p {
+    margin: 5px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .game-board,
+    .status-panel {
+        width: 90%;
+    }
+    .dice-image {
+        width: 80px;
+        height: 80px;
+    }
+}
