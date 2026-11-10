@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake & Ladder</title>
+    <link rel="stylesheet" href="snake_ladder.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Board Image -->
+        <div id="board-container">
+            <img src="board.png" alt="Snake and Ladder Board" id="board-image">
+        </div>
+
+        <!-- Dice Display -->
+        <div id="dice-container">
+            <div id="dice-display">🎲 0</div>
+            <button id="roll-button">Roll Dice</button>
+        </div>
+
+        <!-- Status Panel -->
+        <div id="status-panel">
+            <p id="player-turn">Current Turn: Player 1</p>
+            <p id="player1-pos">Player 1 Position: 0</p>
+            <p id="player2-pos">Player 2 Position: 0</p>
+        </div>
+    </div>
+
+    <script src="snake_ladder.js"></script>
+</body>
+</html>
